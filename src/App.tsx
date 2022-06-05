@@ -5,7 +5,6 @@ import AppContext from './AppContext';
 import AppStore from './stores/AppStore';
 import TestStore from './stores/UserStore';
 import UserStore from './stores/UserStore';
-import TestPage from './testPage';
 import { ThemeProvider } from 'styled-components'
 import TestPage2 from './types/testPage2';
 
