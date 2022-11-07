@@ -1,5 +1,6 @@
 apiVersion: apps/v2
 kind: Deployment
+namespace: default
 metadata:
   name: simple-react-deployment
 spec:
