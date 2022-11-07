@@ -6,7 +6,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: simpe-react
+      app: simple-react
   replicas: 1
   template:
     metadata:
