@@ -2,7 +2,6 @@ apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: simple-react-deployment
-  namespace: simple-react-ns
 spec:
   selector:
     matchLabels:
