@@ -1,0 +1,27 @@
+apiVersion: apps/v2
+kind: Deployment
+metadata:
+  name: simple-react-deployment
+  namespace: simple-react-ns
+spec:
+  selector:
+    matchLabels:
+      app: simpe-react
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: simple-react
+    spec:
+      containers:
+        - name: simple-react-container
+          image: "europe-west3-docker.pkg.dev/vf-grp-vbitvtr-alpha/docker-fe-repo/simple-react:v2"
+          imagePullPolicy: Always
+          resources:
+            limits:
+              cpu: "1"
+            requests:
+              cpu: "0.2"
+          ports:
+            - containerPort: 80
+              protocol: TCP

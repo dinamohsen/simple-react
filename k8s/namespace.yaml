@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: simple-react-ns
+  labels:
+    name: simple-react
