@@ -1,8 +1,8 @@
 apiVersion: apps/v2
 kind: Deployment
-namespace: default
 metadata:
-  name: simple-react-deployment
+  namespace: default
+  name: simple-react-pod
 spec:
   selector:
     matchLabels:
@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: simple-react
+        app: simple-react-pod
     spec:
       containers:
         - name: simple-react-container
