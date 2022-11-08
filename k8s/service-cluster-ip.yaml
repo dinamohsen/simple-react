@@ -1,13 +1,10 @@
-
 apiVersion: apps/v1
 kind: Service
 metadata:
- namespace: default
- name: simple-react
+  name: simple-react
 spec:
- type: ClusterIP
- ports:
-  - port: 80
- selector:
+  type: ClusterIP
+  ports:
+    - port: 80
+  selector:
 app: simple-react
- 
