@@ -1,6 +1,6 @@
 
 apiVersion: apps/v1
-kind: service
+kind: Service
 metadata:
  name: simple-react
 spec:
