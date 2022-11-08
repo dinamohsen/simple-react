@@ -2,7 +2,7 @@ apiVersion: apps/v2
 kind: Deployment
 metadata:
 namespace: default
-  name: simple-react
+name: simple-react
 spec:
   selector:
     matchLabels:
