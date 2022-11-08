@@ -1,11 +1,12 @@
 apiVersion: apps/v2
 kind: Deployment
 metadata:
-  name: simple-react-pod
+namespace: default
+  name: simple-react
 spec:
   selector:
     matchLabels:
-      app: simple-react-pod
+      app: simple-react
   replicas: 1
   template:
     metadata:
@@ -13,7 +14,7 @@ spec:
         app: simple-react
     spec:
       containers:
-        - name: simple-react-container
+        - name: simple-react
           image: "europe-west3-docker.pkg.dev/vf-grp-vbitvtr-alpha/docker-fe-repo/simple-react:v2"
           imagePullPolicy: Always
           resources:
