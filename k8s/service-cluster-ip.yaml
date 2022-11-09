@@ -4,7 +4,7 @@ metadata:
   name: simple-react
 spec:
   type: ClusterIP
-  ports:
-    - port: 80
   selector:
-app: simple-react
+    app: simple-react
+  ports:
+  - port: 80
