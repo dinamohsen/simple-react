@@ -6,6 +6,7 @@ metadata:
 spec:
   selector:
     app: simple-react
+  namespace: test  
   type: LoadBalancer
   ports:
   - port: 80
