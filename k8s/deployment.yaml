@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: simple-react-deployment
-  namespace: devint-ns
+  namespace: devint
   labels:
     app: simple-react
 spec:
