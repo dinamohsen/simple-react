@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: test
+  namespace: default
   name: simple-react
 spec:
   selector:
