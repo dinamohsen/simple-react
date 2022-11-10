@@ -1,23 +1,20 @@
-kind: Deployment
-apiVersion: apps/v1
+apiVersion: "apps/v1"
+kind: "Deployment"
 metadata:
- namespace: default
- name: simple-react
+  name: "simple-react"
+  namespace: "default"
+  labels:
+    app: "simple-react"
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: simple-react
-  
+      app: "simple-react"
   template:
     metadata:
       labels:
-        app: simple-react
+        app: "simple-react"
     spec:
       containers:
-        - name: simple-react
-          image: europe-west3-docker.pkg.dev/vf-grp-vbitvtr-alpha/docker-fe-repo/simple-react:2.0
-          imagePullPolicy: Always
-          ports:
-          - containerPort: 3000
-            name: http
+      - name: "simple-react-sha256-1"
+        image: "europe-west3-docker.pkg.dev/vf-grp-vbitvtr-alpha/docker-fe-repo/simple-react@sha256:6abefd562f9b2eb24daa045cd7ecccb11b41432c58fca82d15a675bac6dd3957"
