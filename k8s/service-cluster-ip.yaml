@@ -1,11 +1,11 @@
- apiVersion: apps/v1
+apiVersion: apps/v1
 kind: Service
 metadata:
   name: simple-react
 spec:
   selector:
-    app: simpe-react
+    app: simple-react
   type: LoadBalancer
   ports:
   - port: 80
-targetPort: 3000
+    targetPort: 3000
