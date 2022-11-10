@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - name: simple-react
-        image: europe-west3-docker.pkg.dev/vf-grp-vbitvtr-alpha/docker-fe-repo/simple-react:2.0
+        image: europe-west3-docker.pkg.dev/vf-grp-vbitvtr-alpha/docker-fe-repo/simple-react:2.2
