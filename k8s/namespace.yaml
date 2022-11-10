@@ -1,6 +1,6 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: simple-react-ns
+  name: test
   labels:
-    name: simple-react
+    name: test
