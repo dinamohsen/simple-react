@@ -1,20 +1,20 @@
-apiVersion: "apps/v1"
-kind: "Deployment"
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: "simple-react"
-  namespace: "default"
+  name: simple-react-deployment
+  namespace: devint-ns
   labels:
-    app: "simple-react"
+    app: simple-react
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: "simple-react"
+      app: simple-react
   template:
     metadata:
       labels:
-        app: "simple-react"
+        app: simple-react
     spec:
       containers:
-      - name: "simple-react-sha256-1"
-        image: "europe-west3-docker.pkg.dev/vf-grp-vbitvtr-alpha/docker-fe-repo/simple-react@sha256:6abefd562f9b2eb24daa045cd7ecccb11b41432c58fca82d15a675bac6dd3957"
+      - name: simple-react
+        image: europe-west3-docker.pkg.dev/vf-grp-vbitvtr-alpha/docker-fe-repo/simple-react:2.0
